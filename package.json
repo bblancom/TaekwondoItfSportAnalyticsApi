@@ -1,0 +1,28 @@
+{
+  "name": "fightanalyticsapi",
+  "version": "1.0.0",
+  "description": "Backend for fight analytics as an api",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Bruno Blanco",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "env-var": "^7.5.0",
+    "express": "^5.1.0",
+    "googleapis": "^161.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.6.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
